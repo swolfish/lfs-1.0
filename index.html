@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LFS test</title>
+	<style>
+		
+		body {
+			position: relative;
+			background: #000;
+		}
+		
+		.content {
+			position: relative;
+			width: 1024px;
+			height: 768px;
+		}
+		
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			animation: fader 2s infinite;
+		}
+		
+		@keyframes fader {
+			0% {opacity: 1;}
+			50% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		
+		video {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="content">
+		
+		<img src="images/xl.png" alt="" />
+		<video src="videos/large.ogv" autoplay="true" loop="true"></video>
+	
+	</div>
+		
+</body>
+</html>
